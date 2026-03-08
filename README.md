@@ -14,7 +14,7 @@ The system predicts key rice grain characteristics and interprets them to classi
 
 This solution contributes to improving transparency and quality control in rice value chains.
 
----
+
 
 ## Project Objectives
 
@@ -24,7 +24,7 @@ This solution contributes to improving transparency and quality control in rice 
 
 3. Design a mobile-ready deployment architecture that enables users to assess rice quality through a mobile application interface.
 
----
+
 
 ## Repository Structure
 
@@ -54,7 +54,7 @@ AminoRice/
 └── README.md
 ```
 
----
+
 
 ## Dataset Description
 
@@ -84,7 +84,7 @@ Average_b
 
 These variables represent grain size, structure, color characteristics, and defect counts.
 
----
+
 
 ## Machine Learning Model
 
@@ -97,7 +97,7 @@ The architecture includes:
 - Fully connected regression layers
 - Output layer predicting 15 rice quality indicators
 
----
+
 
 ## Model Architecture
 
@@ -123,8 +123,6 @@ Dense Output Layer (15 units)
 Predicted Rice Quality Indicators
 ```
 
----
-
 ## Performance Evaluation
 
 Model performance is evaluated using standard regression metrics:
@@ -146,8 +144,6 @@ rmse = np.sqrt(mse)
 print("MAE:", mae)
 print("RMSE:", rmse)
 ```
-
----
 
 ## Environment Setup
 
@@ -199,8 +195,6 @@ python-multipart
 joblib
 ```
 
----
-
 ## Model Loading
 
 ```python
@@ -210,8 +204,6 @@ import joblib
 model = tf.keras.models.load_model("model/best_rice_model.keras", compile=False)
 target_scaler = joblib.load("model/target_scaler.pkl")
 ```
-
----
 
 ## Image Preprocessing
 
@@ -230,8 +222,6 @@ def preprocess_image(image_path):
     return img
 ```
 
----
-
 ## Prediction Function
 
 ```python
@@ -245,8 +235,6 @@ def amino_rice_predict(image_path):
 
     return pred
 ```
-
----
 
 ## Quality Interpretation Logic
 
@@ -262,8 +250,6 @@ def classify_rice_quality(long_count, chalky_count):
     else:
         return "Substandard Quality"
 ```
-
----
 
 ## API Deployment (FastAPI)
 
@@ -290,8 +276,6 @@ Example JSON response:
 }
 ```
 
----
-
 ## Mobile Application Integration
 
 The AminoRice system is designed to integrate with a **Flutter-based mobile application**. The mobile application allows users to:
@@ -300,13 +284,9 @@ The AminoRice system is designed to integrate with a **Flutter-based mobile appl
 - Upload images to the AI backend
 - Receive instant rice quality predictions
 
----
-
 ## Interface Design
 
 ![AminoRice UI](design/AminoRice_Figma_UI.png)
-
----
 
 ## Deployment Architecture
 
@@ -332,8 +312,6 @@ Rice Quality Interpretation
 Results returned to the mobile application
 ```
 
----
-
 ## Future Improvements
 
 Possible extensions of the project include:
@@ -343,9 +321,7 @@ Possible extensions of the project include:
 - Integration with agricultural supply chain monitoring systems
 - Cloud deployment for large-scale agricultural analytics
 
----
-
 ## Author
 
 David Ubushakebwimana  
-Mission Capstone Project – AI for Agricultural Quality Assessment
+Mission Capstone 
