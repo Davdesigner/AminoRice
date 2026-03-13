@@ -10,9 +10,12 @@ The system predicts key rice grain characteristics and interprets them to classi
 
 - Premium Quality
 - Standard Quality
-- Substandard Quality
+- Substandard Quality/Poor Quality
 
 This solution contributes to improving transparency and quality control in rice value chains.
+
+## Video Demo
+
 
 
 
