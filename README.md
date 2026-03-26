@@ -16,7 +16,7 @@ This solution contributes to improving transparency and quality control in rice 
 
 ## Video Demo
 
-https://drive.google.com/file/d/1w-XUjHkWJbogdZeI79E8lTJgOZxZYFOE/view?usp=sharing
+https://drive.google.com/file/d/19OiV5hV0iF7xf0K2W2BuOtHr3dAvxDNI/view?usp=sharing
 
 
 ## Project Objectives
